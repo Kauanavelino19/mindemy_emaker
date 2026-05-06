@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #653654;
+  color: white;
+}
+
+.links button {
+  margin-left: 10px;
+  background-color: white !important;
+  color: #7c3aed !important;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.navbar h2{
+  text-align: center;
+  
+}

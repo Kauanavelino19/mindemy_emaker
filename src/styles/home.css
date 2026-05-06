@@ -1,0 +1,44 @@
+.home{
+  background: linear-gradient(to right, #f8e7f1, #ffffff);
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text{
+  max-width: 500px;
+}
+.hero-text h1{
+  font-size: 28px;
+  color: #EC82B5;
+}
+
+.hero-text h1 span{
+  color: #ec4899 ;
+}
+.hero-text strong{
+   color: #ec4899;
+}
+
+.hero-text p{
+  margin-top: 20px;
+  color: #444;
+}
+
+.search{
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.hero-image img{
+  width: 350px;
+  border-radius: 10px;
+}

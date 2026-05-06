@@ -1,0 +1,37 @@
+
+.register-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,  #f8e7f1, #ffffff);
+}
+.register-box{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  width:300px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  text-align: center;
+}
+.register-box input{
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+.register-box button{
+  background: #a78bfa;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size:15px;
+}
+.register-box p{
+  cursor: pointer;
+  color: #a78bfa;
+  font-family: Arial, sans-serif;
+}
