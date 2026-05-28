@@ -1,0 +1,24 @@
+.scroll-down{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 35px;
+    color: #d63384;
+    cursor: pointer;
+
+    animation: subirDescer 1.5s infinite;
+}
+
+@keyframes subirDescer {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}

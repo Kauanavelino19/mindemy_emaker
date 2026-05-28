@@ -1,37 +1,146 @@
-
 .register-container{
-    height: 100vh;
+    min-height: 100vh;
+
     display: flex;
+    flex-direction: column;
+
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg,  #f8e7f1, #ffffff);
+
+    background: #FEF2FA;
+
+    position: relative;
 }
+
+/* LOGO */
+
+.register-logo{
+    width: 90px;
+
+    position: absolute;
+
+    top: 20px;
+    left: 30px;
+}
+
+/* FORM */
+
 .register-box{
-  background:white;
-  padding:25px;
-  border-radius:10px;
-  width:300px;
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+    width: 100%;
+    max-width: 400px;
 }
+
+/* TITULO */
+
+.register-box h1{
+    color: #F851A2;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+/* SUBTITULO */
+
+.register-subtitle{
+    color: #7c2d5b;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    max-width: 300px;
+
+    line-height: 1.5;
+}
+
+/* INPUTS */
+
 .register-box input{
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #FCE7F3;
+
+    color: #87154C;
+
+    outline: none;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
-.register-box button{
-  background: #a78bfa;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size:15px;
+
+/* BOTÕES */
+
+.register-buttons{
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 10px;
 }
-.register-box p{
-  cursor: pointer;
-  color: #a78bfa;
-  font-family: Arial, sans-serif;
+
+.register-buttons button{
+    border: none;
+
+    padding: 10px 25px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* BOTÃO CADASTRO */
+
+.register-buttons button:first-child{
+    background: #F851A2;
+
+    color: white;
+}
+
+/* BOTÃO CANCELAR */
+
+.cancel-btn{
+    background: transparent;
+
+    color: #F851A2;
+}
+
+/* HOVER */
+
+.register-buttons button:hover{
+    transform: scale(1.03);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px){
+
+    .register-box{
+        width: 90%;
+    }
+
+    .register-box h1{
+        font-size: 32px;
+    }
+
 }

@@ -1,28 +1,40 @@
-import { FaHome, FaUser, FaSignOutAlt } from "react-icons/fa";
+import { useState } from "react";
+import logo from "../assets/logo.svg";
+import {
+  FaBars,
+  FaTimes
+} from "react-icons/fa";
+
 import "../styles/navbar.css";
 
 function NavBar({ mudarTela }) {
+
+  const [menuAberto, setMenuAberto] = useState(false);
+
   return (
     <nav className="navbar">
-      <h2>MINDEMY</h2>
 
-      <div className="links">
-        <button onClick={() => mudarTela("home")}>
-          <FaHome /> Home
-        </button>
+      <img src={logo} alt="Logo Mindemy" className="logo" />
 
-        <button>
-          Cursos
-        </button>
+      <div
+        className="menu-icon"
+        onClick={() => setMenuAberto(!menuAberto)}
+      >
+        {menuAberto ? <FaTimes /> : <FaBars />}
+      </div>
 
-        <button>
-          <FaUser /> Perfil
-        </button>
+      <div className={menuAberto ? "links active" : "links"}>
 
         <button onClick={() => mudarTela("login")}>
-          <FaSignOutAlt /> Sair
+          Entrar
         </button>
+
+        <button onClick={() => mudarTela("cadastro")}>
+          Cadastro
+        </button>
+
       </div>
+
     </nav>
   );
 }
