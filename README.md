@@ -14,6 +14,7 @@ O objetivo do projeto foi desenvolver uma aplicação Front-End moderna, respons
 * JavaScript
 * CSS3
 * HTML5
+* Vite
 * React Icons
 * Git & GitHub
 
