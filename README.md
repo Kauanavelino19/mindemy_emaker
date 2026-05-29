@@ -1,6 +1,10 @@
-# Mindemy E-Maker
+# Mindemy Emakers
 
-Projeto acadêmico desenvolvido em React + Vite para a plataforma de cursos online **Mindemy**.
+O Mindemy Emakers é um projeto de Front-End desenvolvido durante o Processo Trainee da Emakers.
+
+O projeto teve como objetivo aplicar na prática os conhecimentos adquiridos durante o treinamento, utilizando React para o desenvolvimento de uma interface moderna, organizada e responsiva.
+
+A proposta consiste na criação de uma plataforma educacional fictícia chamada **Mindemy**, simulando funcionalidades encontradas em ambientes de ensino online, como login, cadastro, histórico, perfil do usuário e central de suporte.
 
 ## Funcionalidades
 
@@ -9,10 +13,10 @@ Projeto acadêmico desenvolvido em React + Vite para a plataforma de cursos onli
 * Recuperação de senha
 * Página inicial (Home)
 * Perfil do usuário
-* Histórico
+* Histórico de atividades
 * Central de suporte
-* Navbar responsiva para desktop e mobile
-* Layout adaptado para celulares
+* Navbar responsiva para desktop e dispositivos móveis
+* Interface adaptada para diferentes tamanhos de tela
 
 ## Tecnologias Utilizadas
 
@@ -56,9 +60,9 @@ src/
 
 Clone o repositório:
 
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/Kauanavelino19/mindemy_emaker.git
 
-Entre na pasta:
+Entre na pasta do projeto:
 
 cd mindemy_emaker
 
@@ -66,19 +70,26 @@ Instale as dependências:
 
 npm install
 
-Execute o projeto:
+Execute a aplicação:
 
 npm run dev
 
-A aplicação ficará disponível em:
+## Objetivos de Aprendizagem
 
-http://localhost:5173
+Durante o desenvolvimento deste projeto foram praticados conceitos como:
 
-## Objetivo
-
-O projeto foi desenvolvido com foco em aprendizado de desenvolvimento web utilizando React, componentes reutilizáveis, responsividade e organização de interface.
+* Componentização em React
+* Gerenciamento de estado com Hooks
+* Responsividade
+* Organização de componentes
+* Navegação entre telas
+* Boas práticas de Front-End
+* Versionamento com Git e GitHub
 
 ## Autor
 
-Kauan
+Kauan Avelino
+
 Curso: Sistemas de Informação
+
+Projeto desenvolvido durante o Processo Trainee da Emakers.
