@@ -1,146 +1,296 @@
-.register-container{
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    background: #FEF2FA;
-
-    position: relative;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* LOGO */
+.register-container{
+  min-height: 100vh;
 
-.register-logo{
-    width: 90px;
+  background: #FEF2FA;
 
-    position: absolute;
+  padding: 40px;
 
-    top: 20px;
-    left: 30px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+}
+
+/* LOGIN TOPO */
+
+.login-link{
+  position: absolute;
+
+  top: 25px;
+  right: 30px;
+
+  color: #87154C;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* CONTEÚDO */
+
+.register-content{
+  width: 100%;
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* TEXTO */
+
+.register-info{
+  max-width: 450px;
+}
+
+.register-info h1{
+  color: #F851A2;
+
+  font-size: 52px;
+
+  margin-bottom: 25px;
+
+  font-weight: bold;
+}
+
+.register-info p{
+  color: #7a0d4d;
+
+  line-height: 1.9;
+
+  font-size: 15px;
 }
 
 /* FORM */
 
 .register-box{
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  max-width: 380px;
 
-    align-items: center;
+  display: flex;
+  flex-direction: column;
 
-    gap: 18px;
-
-    width: 100%;
-    max-width: 400px;
+  gap: 18px;
 }
-
-/* TITULO */
-
-.register-box h1{
-    color: #F851A2;
-
-    font-size: 42px;
-
-    font-weight: bold;
-
-    text-align: center;
-}
-
-/* SUBTITULO */
-
-.register-subtitle{
-    color: #7c2d5b;
-
-    text-align: center;
-
-    font-size: 14px;
-
-    margin-bottom: 20px;
-
-    max-width: 300px;
-
-    line-height: 1.5;
-}
-
-/* INPUTS */
 
 .register-box input{
-    width: 100%;
+  width: 100%;
 
-    padding: 14px;
+  height: 50px;
 
-    border: none;
+  border: none;
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    background: #FCE7F3;
+  background: #FCE7F3;
 
-    color: #87154C;
+  padding: 0 15px;
 
-    outline: none;
+  color: #87154C;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  outline: none;
+
+  font-size: 15px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.register-box input::placeholder{
+  color: #87154C;
 }
 
 /* BOTÕES */
 
 .register-buttons{
-    display: flex;
+  display: flex;
 
-    gap: 15px;
+  align-items: center;
 
-    margin-top: 10px;
+  gap: 15px;
+
+  margin-top: 10px;
 }
 
 .register-buttons button{
-    border: none;
+  border: none;
 
-    padding: 10px 25px;
+  padding: 12px 25px;
 
-    border-radius: 6px;
+  border-radius: 6px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
-/* BOTÃO CADASTRO */
+/* CADASTRAR */
 
 .register-buttons button:first-child{
-    background: #F851A2;
+  background: #F851A2;
 
-    color: white;
+  color: white;
 }
 
-/* BOTÃO CANCELAR */
+/* CANCELAR */
 
 .cancel-btn{
-    background: transparent;
+  background: transparent;
 
-    color: #F851A2;
+  color: #F851A2;
 }
 
-/* HOVER */
-
 .register-buttons button:hover{
-    transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+/* CHATBOT */
+
+.chatbot-btn{
+  position: fixed;
+
+  bottom: 20px;
+  right: 20px;
+
+  width: 70px;
+  height: 70px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #87154C;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.chatbot-btn svg{
+  width: 35px;
 }
 
 /* RESPONSIVO */
 
+@media(max-width: 768px){
+
+  .register-container{
+    padding: 20px;
+  }
+
+  .register-content{
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 50px;
+  }
+
+  .register-info h1{
+    font-size: 38px;
+  }
+
+  .register-info p{
+    font-size: 14px;
+  }
+
+  .register-box{
+    max-width: 100%;
+  }
+
+  .register-buttons{
+    justify-content: center;
+  }
+}
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
 @media (max-width: 768px){
 
-    .register-box{
-        width: 90%;
-    }
+  .auth-container,
+  .register-container,
+  .forgot-container{
+    padding: 20px;
+    justify-content: flex-start;
+  }
 
-    .register-box h1{
-        font-size: 32px;
-    }
+  .logo,
+  .forgot-logo{
+    width: 80px;
+    margin: 10px auto 20px auto;
+    display: block;
+    position: static;
+  }
 
+  h1,
+  .register-info h1,
+  .forgot-content h1{
+    font-size: 38px;
+  }
+
+  .login-subtitle,
+  .register-info p,
+  .forgot-subtitle{
+    font-size: 14px;
+  }
+
+  .auth-box,
+  .register-box,
+  .forgot-content{
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .auth-box{
+    padding: 25px 20px;
+  }
+
+  .register-link,
+  .login-link{
+    position: static;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .register-buttons,
+  .forgot-buttons{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .register-buttons button,
+  .forgot-buttons button{
+    width: 100%;
+  }
+
+  .chatbot-btn{
+    width: 55px;
+    height: 55px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .chatbot-btn svg{
+    width: 25px;
+    height: 25px;
+  }
 }

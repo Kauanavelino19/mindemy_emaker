@@ -13,7 +13,7 @@ function Login({ mudarTela }) {
       <span className="register-link" onClick={() => mudarTela("cadastro")}>
         Cadastre-se agora
       </span>
-
+    <h1>Login</h1>
       {/* Subtítulo explicativo externo */}
       <p className="login-subtitle">
         Digite o endereço de e-mail e a senha da sua conta Mindemy.
@@ -21,7 +21,7 @@ function Login({ mudarTela }) {
 
       {/* Formulário de Login principal (Retângulo 95) */}
       <form className="auth-box" onSubmit={handleLogin}>
-        <h1>Login</h1>
+        
 
         <input 
           type="email"

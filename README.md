@@ -1,88 +1,84 @@
-# Mindemy - Plataforma de Cursos Online
+# Mindemy E-Maker
 
-## 📚 Sobre o Projeto
+Projeto acadêmico desenvolvido em React + Vite para a plataforma de cursos online **Mindemy**.
 
-O **Mindemy** é uma plataforma fictícia de cursos online desenvolvida com **React.js**, criada durante o Processo Trainee da Emakers Jr.
+## Funcionalidades
 
-O objetivo do projeto foi desenvolver uma aplicação Front-End moderna, responsiva e interativa, utilizando conceitos fundamentais do React e organização de componentes.
+* Login de usuário
+* Cadastro de usuário
+* Recuperação de senha
+* Página inicial (Home)
+* Perfil do usuário
+* Histórico
+* Central de suporte
+* Navbar responsiva para desktop e mobile
+* Layout adaptado para celulares
 
----
+## Tecnologias Utilizadas
 
-## 🚀 Tecnologias Utilizadas
-
-* React.js
-* JavaScript
-* CSS3
-* HTML5
+* React
 * Vite
-* React Icons
-* Git & GitHub
+* JavaScript
+* HTML5
+* CSS3
 
----
+## Estrutura do Projeto
 
-## 🎨 Funcionalidades
-
-O projeto possui:
-
-* ✅ Tela de Login
-* ✅ Tela de Cadastro
-* ✅ Tela de Recuperação de Senha
-* ✅ Página Home
-* ✅ Navbar Responsiva
-* ✅ Menu Mobile (Hambúrguer)
-* ✅ Cards de Cursos
-* ✅ Scroll Animado
-* ✅ Footer
-* ✅ Responsividade para dispositivos móveis
-* ✅ Uso de useState no menu responsivo
-
----
-
-## 📁 Organização do Projeto
-
-```bash
 src/
-│
-├── assets/         # Imagens, gifs e logo
-├── components/     # Componentes reutilizáveis
-├── pages/          # Telas do sistema
-├── styles/         # Arquivos CSS
-│
-├── App.jsx
-├── main.jsx
-```
 
----
+├── assets/
 
-## 🧠 Aprendizados
+├── components/
 
-Durante o desenvolvimento deste projeto, foram praticados conceitos importantes como:
+│ └── NavBar.jsx
 
-* Componentização
-* Props
-* useState
-* Responsividade
-* Estruturação de pastas
-* Navegação entre telas
-* Organização de CSS
-* Publicação com GitHub
+├── pages/
 
----
+│ ├── Home.jsx
 
-## 📱 Responsividade
+│ ├── Login.jsx
 
-O projeto foi desenvolvido pensando em diferentes tamanhos de tela, incluindo dispositivos móveis.
+│ ├── Register.jsx
 
----
+│ ├── ForgotPassword.jsx
 
-## 🔗 Repositório
+│ ├── Profile.jsx
 
-GitHub do projeto:
+│ ├── History.jsx
 
-https://github.com/Kauanavelino19/mindemy_emaker
+│ └── Support.jsx
 
----
+├── styles/
 
-## 👨‍💻 Autor
+└── App.jsx
 
-Desenvolvido por Kauan Avelino durante o Processo Trainee da Emakers Jr.
+## Como Executar
+
+Clone o repositório:
+
+git clone URL_DO_REPOSITORIO
+
+Entre na pasta:
+
+cd mindemy_emaker
+
+Instale as dependências:
+
+npm install
+
+Execute o projeto:
+
+npm run dev
+
+A aplicação ficará disponível em:
+
+http://localhost:5173
+
+## Objetivo
+
+O projeto foi desenvolvido com foco em aprendizado de desenvolvimento web utilizando React, componentes reutilizáveis, responsividade e organização de interface.
+
+## Autor
+
+Kauan
+Curso: Sistemas de Informação

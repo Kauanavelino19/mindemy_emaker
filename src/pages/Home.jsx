@@ -10,6 +10,9 @@ import curso2 from "../assets/92053f730b6beef578246b0ee217dd8dcbcdd0ee.jpg";
 import curso3 from "../assets/c22f154821a8cbf75552700e0b2344e1d80336b8.jpg";
 
 import codeImage from "../assets/fd3d5837d8c6923d8f772190591317bfc1525cf7 (3).png";
+import rodrigoImg from "../assets/rodrigo.jpg";
+import victorImg from "../assets/victor.jpg";
+import lorenzoImg from "../assets/lorenzo.jpg";
 
 function Home(){
 
@@ -113,6 +116,43 @@ function Home(){
                     />
 
                 </div>
+                <section className="courses-section">
+
+    <p className="courses-mini-title">
+        Tudo o que você precisa, exatamente onde você precisa.
+    </p>
+
+    <h2>
+        Conheça nossos cursos
+    </h2>
+
+    <div className="courses-container">
+
+        <CourseCard
+            titulo="Desenvolvimento Web"
+            descricao="Aprenda HTML, CSS, Javascript e React."
+            imagem={curso1}
+        />
+
+        <CourseCard
+            titulo="Ciência de Dados"
+            descricao="Python, SQL e análise de dados."
+            imagem={curso2}
+        />
+
+        <CourseCard
+            titulo="Design Gráfico"
+            descricao="Photoshop, Canva e Illustrator."
+            imagem={curso3}
+        />
+
+    </div>
+
+    <button className="all-courses-btn">
+        TODOS OS CURSOS
+    </button>
+
+</section>
 
             </section>
 
@@ -213,6 +253,146 @@ function Home(){
                 </div>
 
             </section>
+
+            {/* DEPOIMENTOS */}
+
+                    <section className="testimonials">
+
+                    <div className="testimonial-header">
+
+                        <h2>
+                        Veja o que outros alunos estão dizendo
+                        </h2>
+
+                    </div>
+
+                    <div className="testimonial-cards">
+
+                        {/* CARD 1 */}
+
+                        <div className="testimonial-card">
+
+                        <span className="quote">❝</span>
+
+                        <p>
+                            A Mindemy foi essencial na minha trajetória até o mercado de trabalho,
+                            desde o alinhamento dos meus objetivos à colheita dos frutos.
+                            Obrigado a toda a equipe!
+                        </p>
+
+                        <div className="testimonial-user">
+
+                            <img
+                                src={rodrigoImg}
+                                alt="Rodrigo"
+                            />
+
+                            <div>
+                                <h4>Rodrigo Romanhol</h4>
+
+                                <span>
+                                Designer e CEO da Rod Produções
+                                </span>
+                            </div>
+
+                            </div>
+
+                        </div>
+
+                        {/* CARD 2 */}
+
+                        <div className="testimonial-card">
+
+                        <span className="quote">❝</span>
+
+                        <p>
+                            A Mindemy realmente fez diferença no meu trajeto no mundo digital,
+                            e foi uma excelente guia para criar a 7even.
+                        </p>
+
+                       <div className="testimonial-user">
+
+                            <img
+                                src={victorImg}
+                                alt="Victor"
+                            />
+
+                            <div>
+                                <h4>Victor Cabral</h4>
+
+                                <span>
+                                CTO da 7even e Gestor de Tráfego
+                                </span>
+                            </div>
+
+                            </div>
+
+                        </div>
+
+                        {/* CARD 3 */}
+
+                        <div className="testimonial-card">
+
+                        <span className="quote">❝</span>
+
+                        <p>
+                            A Mindemy me deu as ferramentas necessárias para crescer.
+                            Aprendi o que precisava para o mundo real e conquistei
+                            uma promoção com confiança no meu conhecimento.
+                        </p>
+
+                        <div className="testimonial-user">
+
+                            <img
+                                src={lorenzoImg}
+                                alt="Lorenzo"
+                            />
+
+                            <div>
+                                <h4>Lorenzo Ozório</h4>
+
+                                <span>
+                                Desenvolvedor Web, Diretor da Usimicro
+                                </span>
+                            </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    </section>
+
+                    {/* FOOTER GRANDE */}
+
+                    <section className="footer-home">
+
+                    <div className="footer-left">
+
+                        <p>Mindemy</p>
+
+                        <p>Ensine na Mindemy</p>
+
+                        <p>Baixe o aplicativo</p>
+
+                        <p>Quem somos</p>
+
+                        <p>Fale conosco</p>
+
+                    </div>
+
+                    <div className="footer-right">
+
+                        <h2>MINDEMY</h2>
+
+                        <span>
+                        Invista no seu sucesso
+                        </span>
+
+                    </div>
+
+                    </section>
 
         </div>
     );

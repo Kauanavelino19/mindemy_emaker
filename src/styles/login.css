@@ -85,7 +85,7 @@
 }
 
 /* TITULO */
-.auth-box h1{
+ h1{
   text-align: center;
 
   font-size: 52px;
@@ -254,4 +254,230 @@
   padding: 10px 20px;
 
   background: #653654;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+.auth-box,
+.register-box{
+  width:90%;
+}
+
+/* ===== RECUPERAR SENHA ===== */
+
+.forgot-container{
+    min-height: 100vh;
+    background: #FEF2FA;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    padding: 20px;
+}
+
+.forgot-logo{
+    width: 70px;
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.forgot-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    width: 100%;
+    max-width: 500px;
+}
+
+.forgot-content h1{
+    font-size: 56px;
+    color: #F851A2;
+
+    margin-bottom: 15px;
+}
+
+.forgot-subtitle{
+    color: #7A2D55;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    max-width: 420px;
+
+    margin-bottom: 50px;
+}
+
+.forgot-form{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.forgot-form label{
+    text-align: left;
+
+    color: #7A2D55;
+
+    font-size: 14px;
+}
+
+.forgot-form input{
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 8px;
+
+    background: #FCE7F3;
+
+    padding: 0 15px;
+
+    color: #7A2D55;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.forgot-buttons{
+    display: flex;
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+.forgot-buttons button{
+    border: none;
+
+    padding: 10px 28px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.forgot-buttons button:first-child{
+    background: #F851A2;
+    color: white;
+}
+
+.cancel-btn{
+    background: transparent;
+    color: #F851A2;
+}
+
+.forgot-buttons button:hover{
+    transform: scale(1.03);
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 768px){
+
+    .forgot-content h1{
+        font-size: 38px;
+    }
+
+    .forgot-subtitle{
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+
+    .forgot-buttons{
+        flex-direction: column;
+    }
+
+    .forgot-buttons button{
+        width: 100%;
+    }
+
+}
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px){
+
+  .auth-container,
+  .register-container,
+  .forgot-container{
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .logo,
+  .forgot-logo{
+    width: 80px;
+    margin: 10px auto 20px auto;
+    display: block;
+    position: static;
+  }
+
+  h1,
+  .register-info h1,
+  .forgot-content h1{
+    font-size: 38px;
+  }
+
+  .login-subtitle,
+  .register-info p,
+  .forgot-subtitle{
+    font-size: 14px;
+  }
+
+  .auth-box,
+  .register-box,
+  .forgot-content{
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .auth-box{
+    padding: 25px 20px;
+  }
+
+  .register-link,
+  .login-link{
+    position: static;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .register-buttons,
+  .forgot-buttons{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .register-buttons button,
+  .forgot-buttons button{
+    width: 100%;
+  }
+
+  .chatbot-btn{
+    width: 55px;
+    height: 55px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .chatbot-btn svg{
+    width: 25px;
+    height: 25px;
+  }
 }

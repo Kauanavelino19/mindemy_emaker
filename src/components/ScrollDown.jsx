@@ -1,5 +1,5 @@
 import { FaChevronDown } from "react-icons/fa";
-import "..//styles/scroll.css";
+import "../styles/scroll.css";
 
 function ScrollDown(){
     const descerTela = () =>{

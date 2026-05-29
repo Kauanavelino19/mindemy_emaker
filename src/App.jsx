@@ -5,21 +5,33 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ForgotPassword from "./pages/ForgotPassword";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import Profile from "./pages/Profile";
+import History from "./pages/History";
+import Support from "./pages/Support";
 
 function App() {
   const [tela, setTela] = useState("login");
-  const [logado, setLogado] = useState(false);
+
+  const telasComNavbar = [
+    "home",
+    "historia",
+    "perfil",
+    "suporte"
+  ];
 
   return (
     <>
-      <NavBar mudarTela={setTela} tela = {tela} />
+      {telasComNavbar.includes(tela) && (
+        <NavBar mudarTela={setTela} tela={tela} />
+      )}
 
       {tela === "login" && <Login mudarTela={setTela} />}
       {tela === "cadastro" && <Register mudarTela={setTela} />}
       {tela === "forgot" && <ForgotPassword mudarTela={setTela} />}
       {tela === "home" && <Home />}
-      <Footer />
+      {tela === "perfil" && <Profile />}
+      {tela === "historia" && <History />}
+      {tela === "suporte" && <Support />}
     </>
   );
 }
