@@ -85,74 +85,43 @@ function Home(){
 
             <section className="courses-section">
 
-                <p className="courses-mini-title">
-                    Tudo o que você precisa, exatamente onde você precisa.
-                </p>
-
-                <h2>
-                    Conheça nossos cursos
-                </h2>
-
-                
-
-                <div className="courses-container">
-
-                    <CourseCard
-                        titulo="Desenvolvimento Web"
-                        descricao="Aprenda HTML, CSS, Javascript e React."
-                        imagem={curso1}
-                    />
-
-                    <CourseCard
-                        titulo="Ciência de Dados"
-                        descricao="Python, SQL e análise de dados."
-                        imagem={curso2}
-                    />
-
-                    <CourseCard
-                        titulo="Design Gráfico"
-                        descricao="Photoshop, Canva e Illustrator."
-                        imagem={curso3}
-                    />
-
-                </div>
                 <section className="courses-section">
 
-    <p className="courses-mini-title">
-        Tudo o que você precisa, exatamente onde você precisa.
-    </p>
+                    <p className="courses-mini-title">
+                        Tudo o que você precisa, exatamente onde você precisa.
+                    </p>
 
-    <h2>
-        Conheça nossos cursos
-    </h2>
+                    <h2>
+                        Conheça nossos cursos
+                    </h2>
 
-    <div className="courses-container">
+                    <div className="courses-container">
 
-        <CourseCard
-            titulo="Desenvolvimento Web"
-            descricao="Aprenda HTML, CSS, Javascript e React."
-            imagem={curso1}
-        />
+                        <CourseCard
+                            titulo="Desenvolvimento Web"
+                            descricao="Aprenda HTML, CSS, Javascript e React."
+                            imagem={curso1}
+                        />
 
-        <CourseCard
-            titulo="Ciência de Dados"
-            descricao="Python, SQL e análise de dados."
-            imagem={curso2}
-        />
+                        <CourseCard
+                            titulo="Ciência de Dados"
+                            descricao="Python, SQL e análise de dados."
+                            imagem={curso2}
+                        />
 
-        <CourseCard
-            titulo="Design Gráfico"
-            descricao="Photoshop, Canva e Illustrator."
-            imagem={curso3}
-        />
+                        <CourseCard
+                            titulo="Design Gráfico"
+                            descricao="Photoshop, Canva e Illustrator."
+                            imagem={curso3}
+                        />
 
-    </div>
+                    </div>
 
-    <button className="all-courses-btn">
-        TODOS OS CURSOS
-    </button>
+                    <button className="all-courses-btn">
+                        TODOS OS CURSOS
+                    </button>
 
-</section>
+                </section>
 
             </section>
 

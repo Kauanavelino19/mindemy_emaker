@@ -1,4 +1,6 @@
-    function Profile() {
+  import "../styles/profile.css";  
+    
+  function Profile() {
   return (
     <div className="page">
       <h1>Meu Perfil</h1>
